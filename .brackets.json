@@ -1,0 +1,7 @@
+{
+    "phonegapcodehints.detectedExclusions": [
+        "G:/weatherApp/platforms/android/assets/www/cordova_plugins.js",
+        "G:/weatherApp/www/js/services/WeatherSer.js",
+        "G:/weatherApp/www/js/controllers/moWeatherCtrl.js"
+    ]
+}

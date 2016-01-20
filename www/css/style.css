@@ -1,0 +1,18 @@
+/* Empty. Add your own CSS if you like */
+
+.WeatherReport {
+    width: 600px;
+    border-collapse: collapse;
+}
+.WeatherReport td {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+}
+.WeatherReport td {
+    width: 130px;
+    height: 200px;
+    text-align: center;
+}
+.centeralignment {
+    text-align: center;
+}

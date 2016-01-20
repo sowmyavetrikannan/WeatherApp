@@ -1,0 +1,26 @@
+<ion-content class="retbg">
+    <div class="ng-cloak">
+        <h3 class="centeralignment">Weather Forecast</h3>
+        <hr>
+        <br/> City:
+        <select ng-options="city as city.Details for city in cities" ng-model="currentCity" ng-change="SelectedCity(currentCity)"></select>
+        <br/>
+        <br/>
+        <h4 class="centeralignment" ng-show="currentCity.City != null">Weather Forecast for {{currentCity.City}}, {{currentCity.Country}}</h4>
+        <br/>
+
+        <table class="centeralignment" style="border: 1px solid #CCCCCC;" ng-show="forecast.length > 0" border="1">
+            <tr>
+                <td style="border: 1px solid #CCCCCC;" ng-repeat="detail in forecast">
+                    {{detail.day}}
+                    <br/> {{detail.date}}
+                    <br/>
+                    <img src="http://l.yimg.com/a/i/us/we/52/{{detail.code}}.gif" />
+                    <br/> {{detail.high}}&#176; F
+                    <br/> {{detail.low}}&#176; F
+                    <br/> {{detail.text}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</ion-content>
